@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "love.js": "^11.4.1",
+    "statikk": "^2.2.2"
+  }
+}

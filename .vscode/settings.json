@@ -1,0 +1,25 @@
+{
+    "ego.power-tools": {
+        "commands": {
+            "myCommand": {
+                "script": "build.cjs",
+                "button": {
+                    "text": "Build"
+                }
+            },
+
+            "myCommand2": {
+                "script": "serve.cjs",
+                "button": {
+                    "text": "Serve"
+                }
+            },
+        }
+    },
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.workspace.library": [
+        "${3rd}/love2d/library",
+        "/home/diminiminim/.vscode/extensions/sumneko.lua-3.6.20-linux-x64/server/meta/427c7605"
+    ],
+    "Lua.workspace.checkThirdParty": false,
+}
