@@ -5,6 +5,34 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1">
     <title>lovejs</title>
+	<script src="consolewrapper.js"></script>
+
+	<script>
+		var writeDir = "";
+		function uploadWriteDir(lua_in) {
+			writeDir = lua_in;
+			console.log(writeDir);
+		}
+
+		async function requestData(url) {
+			try {
+				const response = await fetch(url);
+				if (!response.ok) {
+					throw new Error(`Response status: ${response.status}`);
+				}
+
+				const data = await response.bytes()
+
+				console.log(url)
+				FS.writeFile(writeDir+"/__temp"+"0", data);
+			} catch (error) {
+				console.error(error.message);
+			}
+		}
+
+
+
+	</script>
   </head>
   <body>
     <center>

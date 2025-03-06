@@ -8,31 +8,16 @@ exports.execute = async (args) => {
 	const texts = [
 
 		"rm -rf builds/lovejs; mkdir builds/lovejs",
-		"npx love.js game builds/lovejs -t name -c -m 40000000",
+		"npx love.js game builds/lovejs -t name -c",
 
 		"cp -f builds/lovejs/game.data builds/game.data",
 		"cp -f builds/lovejs/game.js   builds/game.js",
 		"cp -f builds/lovejs/love.js   builds/love.js",
 		"cp -f builds/lovejs/love.wasm builds/love.wasm",
 
-		// "rm -rf love; mkdir love",
-		// "git clone https://github.com/Sheepolution/love-fiddle.git love",
+		"cd builds; node globalizeFS; cd ..",
 
-		// "npm i love.js -f",
-
-		// "cd love",
-
-		// "npx love.js lua bin -t name",
-
-		// "cp -f bin/game.data game.data",
-		// "cp -f bin/game.js   game.js",
-		// "cp -f bin/love.js   love.js",
-		// "cp -f bin/love.wasm love.wasm",
-
-		// "mv globalizeFS.js globalizeFS.cjs",
-		// "node globalizeFS.cjs",
-
-		// "cd ..",
+		"npx statikk builds --port 8080 --coi -cors"
 	];
 
 	for (const text of texts) {

@@ -284,6 +284,6 @@ Module.expectedDataFileDownloads++;
     }
 
   }
-  loadPackage({"package_uuid":"af6e9779-a315-4be9-88b8-741e5d8f88ce","remote_package_size":5706,"files":[{"filename":"/.vscode/extensions.json","crunched":0,"start":0,"end":140,"audio":false},{"filename":"/.vscode/launch.json","crunched":0,"start":140,"end":501,"audio":false},{"filename":"/.vscode/settings.json","crunched":0,"start":501,"end":647,"audio":false},{"filename":"/js.lua","crunched":0,"start":647,"end":5566,"audio":false},{"filename":"/main.lua","crunched":0,"start":5566,"end":5706,"audio":false}]});
+  loadPackage({"package_uuid":"b0f38157-a5fb-4300-8ae4-960f034d0994","remote_package_size":7528,"files":[{"filename":"/.vscode/extensions.json","crunched":0,"start":0,"end":140,"audio":false},{"filename":"/.vscode/launch.json","crunched":0,"start":140,"end":501,"audio":false},{"filename":"/.vscode/settings.json","crunched":0,"start":501,"end":647,"audio":false},{"filename":"/js.lua","crunched":0,"start":647,"end":5467,"audio":false},{"filename":"/main.lua","crunched":0,"start":5467,"end":7528,"audio":false}]});
 
 })();
