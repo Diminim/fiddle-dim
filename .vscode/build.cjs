@@ -15,7 +15,7 @@ exports.execute = async (args) => {
 		"cp -f builds/lovejs/love.js   builds/love.js",
 		"cp -f builds/lovejs/love.wasm builds/love.wasm",
 
-		"cd builds; node globalizeFS; cd ..",
+		"cd builds; node globalizeFS.cjs; cd ..",
 
 		"npx statikk builds --port 8080 --coi -cors"
 	];
