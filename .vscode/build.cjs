@@ -15,9 +15,10 @@ exports.execute = async (args) => {
 		"cp -f builds/lovejs/love.js   builds/love.js",
 		"cp -f builds/lovejs/love.wasm builds/love.wasm",
 
-		"cd builds; node globalizeFS.cjs; cd ..",
+		// "rm -rf builds/lovejs/",
 
-		"npx statikk builds --port 8080 --coi -cors"
+		"cd builds; node globalizeFS.cjs; cd ..",
+		// delete globalizeFS?
 	];
 
 	for (const text of texts) {

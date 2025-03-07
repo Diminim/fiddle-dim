@@ -90,7 +90,7 @@ Module.expectedDataFileDownloads++;
       function assert(check, msg) {
         if (!check) throw msg + new Error().stack;
       }
-      Module['FS_createPath']('/', '.vscode', true, true);
+      
 
       function DataRequest(start, end, crunched, audio) {
         this.start = start;
@@ -284,6 +284,6 @@ Module.expectedDataFileDownloads++;
     }
 
   }
-  loadPackage({"package_uuid":"7af0556a-ae2d-4282-9800-47862d9acec7","remote_package_size":8409,"files":[{"filename":"/.vscode/extensions.json","crunched":0,"start":0,"end":140,"audio":false},{"filename":"/.vscode/launch.json","crunched":0,"start":140,"end":501,"audio":false},{"filename":"/.vscode/settings.json","crunched":0,"start":501,"end":647,"audio":false},{"filename":"/js.lua","crunched":0,"start":647,"end":5467,"audio":false},{"filename":"/main.lua","crunched":0,"start":5467,"end":8409,"audio":false}]});
+  loadPackage({"package_uuid":"af127b83-0813-4823-9151-5ae6c7285f08","remote_package_size":9434,"files":[{"filename":"/instance.lua","crunched":0,"start":0,"end":1803,"audio":false},{"filename":"/js.lua","crunched":0,"start":1803,"end":6756,"audio":false},{"filename":"/main.lua","crunched":0,"start":6756,"end":9434,"audio":false}]});
 
 })();

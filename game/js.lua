@@ -1,3 +1,6 @@
+love.filesystem.write("_", "") -- Wake up filesystem
+love.filesystem.remove("_")
+
 __requestQueue = {}
 _requestCount = 0
 _Request =
@@ -47,6 +50,9 @@ end
 
 --Call JS.newRequest instead
 function _Request:new(isPromise, command, onDataLoaded, onError, timeout, id)
+	id = id or _requestCount
+	_requestCount = _requestCount + 1
+
 	local obj = {}
 	setmetatable(obj, self)
 	obj.command = command
@@ -121,7 +127,7 @@ function JS.newRequest(funcToCall, onDataLoaded, onError, timeout, optionalId)
 		return
 	end
 	table.insert(__requestQueue,
-		_Request:new(false, funcToCall, onDataLoaded, onError, timeout or 5, optionalId or _requestCount))
+		_Request:new(false, funcToCall, onDataLoaded, onError, timeout or 5, optionalId))
 end
 
 --This function can be handled manually (in JS code)
