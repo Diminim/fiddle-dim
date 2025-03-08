@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<iframe src="love.html" id="love-iframe" width="800" height="600" frameborder="0"></iframe>
+
+		<script>
+		const iframe = document.getElementById('love-iframe');
+		var readDir = "content/"
+		var entranceFile = "main.lua"
+		iframe.addEventListener('load', function() {
+		iframe.contentWindow.postMessage({readDir: readDir, entranceFile: entranceFile}) } )
+		</script>
+	</body>
+</html>

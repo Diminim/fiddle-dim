@@ -14,7 +14,7 @@ local instanceDir = "/ext/"..uuid.."/"
 love.filesystem.createDirectory(instanceDir)
 
 
-local entranceFile = "main.lua"
+local entranceFile
 JS.newRequest(
     JS.stringFunc(
         [[return getEntrance()]]

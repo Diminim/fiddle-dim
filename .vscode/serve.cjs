@@ -6,12 +6,13 @@ exports.execute = async (args) => {
    const terminal = vscode.window.activeTerminal;
 
    const texts = [
+      "npx statikk builds/standalone --port 8081 --coi -cors"
+
+
       // "npx http-server -a localhost -c-1 -o /love/ --cors=*",
       // "npx http-server -a localhost -c-1 --cors -o /love/",
 
       // "npx http-server -a localhost -c-1 -o /love/ --cors=* --header=Cross-Origin-Opener-Policy:same-origin,Cross-Origin-Embedder-Policy:credentialless",
-
-      "npx statikk builds --port 8081 --coi -cors"
 
       // "npx http-server -a localhost -c-1 --cors Cross-Origin-Opener-Policy:same-origin,Cross-Origin-Embedder-Policy:credentialless -o /love/",
 
