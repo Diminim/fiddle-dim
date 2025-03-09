@@ -36,7 +36,7 @@ JS.newRequest(
         [[return getDirectoryItems()]]
     ),
     function (data)
-        directoryItems = stringSplit(data, " / ")
+        directoryItems = stringSplit(data, ",")
     end
 )
 

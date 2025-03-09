@@ -10,9 +10,11 @@
 		<script>
 		const iframe = document.getElementById('love-iframe');
 		var readDir = "content/"
+		var files = "main.lua,lcb-autumn-16x16.png"
 		var entranceFile = "main.lua"
+
 		iframe.addEventListener('load', function() {
-		iframe.contentWindow.postMessage({readDir: readDir, entranceFile: entranceFile}) } )
+		iframe.contentWindow.postMessage({readDir: readDir, files: files, entranceFile: entranceFile}) } )
 		</script>
 	</body>
 </html>

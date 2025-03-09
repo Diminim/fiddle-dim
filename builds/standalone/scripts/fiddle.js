@@ -1,8 +1,9 @@
 var readDir      = ""; // user defined
+var files        = ""; // user defined
 var entranceFile = ""; // user defined
 
 function getDirectoryItems() {
-    return "main.lua / lcb-autumn-16x16.png"
+    return files
 }
 
 function getEntrance() {

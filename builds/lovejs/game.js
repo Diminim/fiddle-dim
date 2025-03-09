@@ -284,6 +284,6 @@ Module.expectedDataFileDownloads++;
     }
 
   }
-  loadPackage({"package_uuid":"3971db53-b063-4323-b7e5-3dd96b029300","remote_package_size":9421,"files":[{"filename":"/instance.lua","crunched":0,"start":0,"end":1790,"audio":false},{"filename":"/js.lua","crunched":0,"start":1790,"end":6743,"audio":false},{"filename":"/main.lua","crunched":0,"start":6743,"end":9421,"audio":false}]});
+  loadPackage({"package_uuid":"ea536a9d-4627-4eab-8640-61ad464e4168","remote_package_size":9419,"files":[{"filename":"/instance.lua","crunched":0,"start":0,"end":1788,"audio":false},{"filename":"/js.lua","crunched":0,"start":1788,"end":6741,"audio":false},{"filename":"/main.lua","crunched":0,"start":6741,"end":9419,"audio":false}]});
 
 })();

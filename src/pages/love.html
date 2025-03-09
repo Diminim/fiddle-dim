@@ -11,9 +11,10 @@
 	<script src="scripts/fiddle.js"></script>
 	<script>
 		window.addEventListener("message", function (event) {
-			if (!event.data || !event.data.readDir || !event.data.entranceFile) return;
+			if (!event.data || !event.data.readDir || !event.data.files || !event.data.entranceFile) return;
 
 			readDir = event.data.readDir
+			files = event.data.files
 			entranceFile = event.data.entranceFile
     	}, false);
 	</script>

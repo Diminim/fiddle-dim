@@ -14,13 +14,11 @@ Write something to the filesystem to wake it up
 Made js.lua not read filesystem without checking if it exists
 Actually increment request count
 
-DIY tut
 
 TODO:
-Send data to js? Oh maybe that is what type module is for.
-Automatically make directory listings
+DIY tut
+
 error handling
-embed
 
 Virtual filesystem viewer and editor
 Text editor
@@ -30,14 +28,3 @@ lua terminal
 Play, restart, pause, inspector/interactive, autoplay
 
 luajit extensions
-
-
----
-
-I need to do a couple things
-
-Make a list of instructions for porting
-
-Call the fiddle.js with args somehow
-
-Generate the directory somehow

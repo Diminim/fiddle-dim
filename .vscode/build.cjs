@@ -28,6 +28,7 @@ exports.execute = async (args) => {
 		// Embed
 
 		"cp -r builds/standalone/* builds/embed",
+		"rm -rf builds/embed/content",
 		"rm builds/embed/index.html",
 		"mv builds/embed/love.html builds/embed/index.html"
 

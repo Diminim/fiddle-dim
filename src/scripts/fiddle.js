@@ -1,8 +1,9 @@
 var readDir      = ""; // user defined
+var files        = ""; // user defined
 var entranceFile = ""; // user defined
 
 function getDirectoryItems() {
-    return "main.lua / lcb-autumn-16x16.png"
+    return files
 }
 
 function getEntrance() {
@@ -15,8 +16,8 @@ async function readAndWrite(relDir, relFilePath) {
         const absWrite = relDir + relFilePath
 
 
-        console.log("read " + absRead)
-        console.log("write " + absWrite)
+        console.log("R: " + absRead)
+        console.log("W: " + absWrite)
 
         const response = await fetch(absRead);
         if (!response.ok) {
@@ -24,10 +25,10 @@ async function readAndWrite(relDir, relFilePath) {
         }
 
         const data = await response.bytes()
-        console.log("read " + absRead)
+        console.log("R OK " + absRead)
 
         FS.writeFile(absWrite, data);
-        console.log("written " + absWrite)
+        console.log("W OK "+ absWrite)
     } catch (error) {
         console.error(error.message);
     }
